@@ -29,10 +29,14 @@ question_1 = f'{BLUE}> Pregunta 1. ¿Cuál es el origen del nombre \'Python\' ?{
 question_2 = f'{BLUE}> Pregunta 2. ¿Quien es el creador de este lenguaje de programación?{RESET}\n'
 question_3 = f'{BLUE}> Pregunta 3. Python es considerado un lenguaje de ¿bajo o alto nivel? ¿Por qué?{RESET}\n'
 question_4 = f'{BLUE}> Pregunta 4. ¿Es un lenguaje compilado o un lenguaje interpretado?{RESET}\n'
+question_5 = f'{BLUE}> Pregunta 5. ¿Cual de estos frameworks pertenecen a Python?'
 
 # Tipo de respuesta
 right_answer = f'Respuesta correcta {name} ganaste 5 puntos. Tu nuevo puntaje es '
 wrong_answer = f'Respuesta incorrecta {name}. Pierdes 2 puntos, tu nuevo puntaje es '
+
+
+# 
 
 #Pregunta 1
 print(question_1)
@@ -104,6 +108,24 @@ else:
     puntaje-=2
     print(f'{RED}{wrong_answer}{puntaje}\n') 
 
+
+# Pregunta 5 
+print(question_5)
+print("""a) Laravel
+b) Django
+c) Angular 
+\n Responde escribiendo a, b, c según la opción que elijas. """)
+answer_5=input('> ')
+while answer_5 not in ('a','b','c'):
+    answer_5 = input('Debes escribir a, b o c según corresponda: ')
+
+if answer_5 == 'b':
+    puntaje+=5
+    print(f'{GREEN}{right_answer}{puntaje}{RESET}\n')
+else:
+    puntaje-=2
+    print(f'{RED}{wrong_answer}{puntaje}\n') 
+    
 #Fin del juego
 if puntaje>0:
         print(f'\n{GREEN}Felicidades {name}, has llegado al fin de la trivia, tu puntaje final es {puntaje}.{RESET}')
