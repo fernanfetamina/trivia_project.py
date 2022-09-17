@@ -1,5 +1,5 @@
 # trivia_project.py
-Trivia de 4 preguntas sobre Python
+Trivia de 5 preguntas sobre Python
 - Cada respuesta correcta suma 5 puntos
 - Cada respuesta incorrecta resta 2 puntos
 - Si el usuario termina con un puntaje mayor a 0, gana la trivia.
